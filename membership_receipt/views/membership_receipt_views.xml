@@ -7,14 +7,14 @@
             <field name="inherit_id" ref="membership.view_membership_invoice_view"/>
             <field name="arch" type="xml">
                 <button name="membership_invoice" position="before">
-			<button string="Issue Membership Receipt" name="membership_receipt" type="object" class="btn-primary"/>
-		</button>
-	    </field>
+                    <button string="Issue Membership Receipt" name="membership_receipt" type="object" class="btn-primary"/>
+                </button>
+	        </field>
         </record>
 
         <record id="action_membership_receipt_view" model="ir.actions.act_window">
             <field name="name">Join Membership</field>
-            <field name="res_model">membership.invoice</field>
+            <field name="res_model">membership.voucher</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="view_membership_receipt_view"/>
@@ -22,7 +22,7 @@
         </record>
 
         <act_window name="Membership"
-            res_model="membership.invoice"
+            res_model="membership.voucher"
             src_model="res.partner"
             multi="True"
             key2="client_action_multi"
