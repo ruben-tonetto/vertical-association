@@ -32,7 +32,7 @@ class Partner(models.Model):
                 'product_id': product_id,
                 'price_unit': amount,
                 'receipt_id': receipt.id,
-                'name': product.name_get()[0][1],
+                'name': product.partner_ref,
                 'account_id': partner.property_account_receivable_id.id,
             }
             # create a record in cache, apply onchange then revert back to a dictionnary
