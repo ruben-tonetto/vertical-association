@@ -23,6 +23,7 @@ class Partner(models.Model):
                 'partner_id': partner.id,
                 'account_id': partner.property_account_receivable_id.id,
                 'fiscal_position_id': partner.property_account_position_id.id,
+                'voucher_type': 'sale'
             })
             line_values = {
                 'product_id': product_id,

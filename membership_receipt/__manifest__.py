@@ -12,7 +12,10 @@
     'depends': [
         'membership',
         'account_voucher'],
-    'data': ['views/membership_receipt_views.xml'],
+    'data': [
+        'views/membership_receipt_views.xml',
+        'views/partner_views.xml',
+    ],
     'installable': True,
     'application': False,
     'auto_install': False,
